@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code 4 Care - AI Health Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Code 4 Care</h1>
+                        <p>AI-Powered Healthcare for Odisha</p>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <!-- Added authentication links -->
+                    <a href="signin.html" class="auth-link">Sign In</a>
+                    <a href="signup.html" class="auth-link btn-primary-nav">Sign Up</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background: linear-gradient(135deg, #4f46e5 0%, #1f2937 100%); color: white;">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" style="color: white;">
+                    <div class="badge" style="background: rgba(0, 0, 0, 0.5); color: white; border: 1px solid rgba(255, 255, 255, 0.6);">
+                        <i class="fas fa-sparkles"></i>
+                        <span style="color: white;">AI-Powered Healthcare</span>
+                    </div>
+                    <h1 style="color: white;">Code 4 Care - Smart Health Assistant for <span class="highlight" style="color: #a5b4fc;">Odisha</span></h1>
+                    <p style="color: white;">Get instant, reliable health information and disease awareness through our AI-powered chatbot. Available 24/7 in Odia and English.</p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn-primary" style="background: white; color: #374151;">
+                            <i class="fas fa-comments"></i>
+                            <span>Start Chat Now</span>
+                        </button>
+                        <button class="btn-secondary" style="background: rgba(0, 0, 0, 0.3); color: white; border: 2px solid white;">
+                            <span style="color: white;">Learn More</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="stats" style="color: white;">
+                        <div class="stat" style="color: white;">
+                            <div class="stat-number" style="color: white;">24/7</div>
+                            <div class="stat-label" style="color: white;">Available</div>
+                        </div>
+                        <div class="stat" style="color: white;">
+                            <div class="stat-number" style="color: white;">2+</div>
+                            <div class="stat-label" style="color: white;">Languages</div>
+                        </div>
+                        <div class="stat" style="color: white;">
+                            <div class="stat-number" style="color: white;">100%</div>
+                            <div class="stat-label" style="color: white;">Free</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/modern-hospital-building-in-odisha-india-with-medi-8E4hxPigrCqW5boS2HM0k6bWtcheuW.jpg" alt="Modern Hospital in Odisha" class="main-image">
+                        
+                        <!-- Floating Medical Icons -->
+                        <div class="floating-icon icon-1">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <div class="floating-icon icon-2">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="floating-icon icon-3">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="floating-icon icon-4">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="floating-icon icon-5">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <div class="floating-icon icon-6">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Demo Section -->
+    <section class="chatbot-demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>Try Our AI Health Assistant</h2>
+                <p>Experience intelligent health guidance powered by advanced AI technology</p>
+            </div>
+
+            <div class="chatbot-container">
+                <div class="chatbot-card">
+                    <div class="chatbot-header">
+                        <div class="bot-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Health Assistant</h3>
+                        <p>Ask me anything about health and diseases</p>
+                    </div>
+                    
+                    <div class="chat-messages">
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                <div class="message-label">AI Assistant</div>
+                                <p>Hello! I'm your AI health assistant. I can help you with disease awareness, symptoms, prevention tips, and general health guidance. How can I assist you today?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input">
+                        <input type="text" placeholder="Type your health question here...">
+                        <button class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+
+                    <div class="quick-questions">
+                        <span class="question-tag">Diabetes symptoms</span>
+                        <span class="question-tag">COVID-19 prevention</span>
+                        <span class="question-tag">Malaria awareness</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Gallery Section -->
+    <section class="health-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Healthcare Excellence in Odisha</h2>
+                <p>Witness the transformation of healthcare through technology and compassion</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/indian-doctors-and-healthcare-workers-in-odisha-ho-a1sCLqQad5CquDGOvjw91hw0l7VMik.jpg" alt="Healthcare Workers in Odisha">
+                    <div class="gallery-overlay">
+                        <h3>Dedicated Healthcare Workers</h3>
+                        <p>Our medical professionals working tirelessly for your health</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/ai-medical-technology-diagnostic-equipment-in-m-0K9E7c2gGGAIsjCBGH4qZIO8f2kFfE.jpg" alt="AI Medical Technology">
+                    <div class="gallery-overlay">
+                        <h3>AI-Powered Diagnostics</h3>
+                        <p>Cutting-edge technology for accurate health assessments</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/telemedicine-consultation-doctor-patient-video-goAFB0QwhzO1E4FwGf1VB6OpEBtweH.jpg" alt="Telemedicine Consultation">
+                    <div class="gallery-overlay">
+                        <h3>Remote Consultations</h3>
+                        <p>Connect with healthcare professionals from anywhere</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/mobile-health-app-interface-medical-icons-sma-VLv9oGyfZFuqHk99uRindp9fM214Vf.jpg" alt="Mobile Health App">
+                    <div class="gallery-overlay">
+                        <h3>Mobile Health Solutions</h3>
+                        <p>Healthcare at your fingertips with our mobile platform</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Health Features</h2>
+                <p>Our AI-powered platform offers a wide range of health services and information</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon brain">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Diagnosis</h3>
+                    <p>Get preliminary health assessments based on symptoms using advanced AI algorithms</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon shield">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Disease Prevention</h3>
+                    <p>Learn about preventive measures and early warning signs for common diseases</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon users">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Health</h3>
+                    <p>Access public health information and community wellness programs</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon pills">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Medicine Information</h3>
+                    <p>Get detailed information about medications, dosages, and side effects</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon emergency">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Emergency Guidance</h3>
+                    <p>Receive immediate guidance for health emergencies and first aid procedures</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon wellness">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Wellness Tips</h3>
+                    <p>Get personalized health tips and lifestyle recommendations for better living</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Users Helped</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Questions Answered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Availability</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Accuracy Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/indian-doctors-and-healthcare-workers-in-odisha-ho-a1sCLqQad5CquDGOvjw91hw0l7VMik.jpg" alt="Healthcare Workers in Odisha">
+                    <div class="image-decorations">
+                        <div class="decoration-icon dec-1"><i class="fas fa-heartbeat"></i></div>
+                        <div class="decoration-icon dec-2"><i class="fas fa-shield-virus"></i></div>
+                        <div class="decoration-icon dec-3"><i class="fas fa-microscope"></i></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>About Code 4 Care Mission</h2>
+                    <p>Code 4 Care represents the Government of Odisha's commitment to providing accessible healthcare information to all citizens. Our AI-powered health chatbot represents a significant step towards digital healthcare transformation, ensuring that quality health guidance is available to everyone, regardless of their location or economic status.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="check-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>Multilingual Support</h4>
+                                <p>Available in Odia and English for better accessibility</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="check-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>Evidence-Based Information</h4>
+                                <p>All health information is verified by medical professionals</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="check-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>Privacy Protected</h4>
+                                <p>Your health conversations are completely confidential</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Have questions or need support? We're here to help.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone Support</h3>
+                    <p>Call our helpline for immediate assistance</p>
+                    <div class="contact-info">1800-XXX-XXXX</div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Support</h3>
+                    <p>Send us your queries and feedback</p>
+                    <div class="contact-info">health@odisha.gov.in</div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Office Address</h3>
+                    <p>Visit our office for in-person support</p>
+                    <div class="contact-info">Bhubaneswar, Odisha</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Code 4 Care</span>
+                    </div>
+                    <p>Empowering citizens with AI-driven health awareness and disease prevention.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Health Topics</h4>
+                    <ul>
+                        <li><a href="#">Disease Prevention</a></li>
+                        <li><a href="#">Emergency Care</a></li>
+                        <li><a href="#">Wellness Tips</a></li>
+                        <li><a href="#">Medicine Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Government Links</h4>
+                    <ul>
+                        <li><a href="#">Odisha.gov.in</a></li>
+                        <li><a href="#">Health Department</a></li>
+                        <li><a href="#">Digital India</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Code 4 Care - Government of Odisha. All rights reserved. | Developed for Smart India Hackathon</p>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
